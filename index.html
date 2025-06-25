@@ -3,45 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khubi Designs | My Portfolio</title>
+    <title>StarryDesign | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>✨ Khubi Designs</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <a href="#" class="logo">✨ StarryDesign</a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>Hello, I'm Khubi!</h2>
-        <p>Welcome to my creative space. I design & build beautiful things.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hello, I'm <span>Alex</span></h1>
+            <p>UI/UX Designer & Frontend Developer</p>
+            <a href="#work" class="btn">View My Work</a>
+        </div>
     </section>
 
-    <section id="work">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A cool project I built.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Another awesome creation.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="assets/profile.jpg" alt="Profile Photo">
+                <div class="text">
+                    <p>I create beautiful, functional digital experiences. With 5+ years in design and development, I bring ideas to life.</p>
+                    <div class="skills">
+                        <span>UI/UX Design</span>
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Figma</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Email me at: <a href="mailto:hello@starrydesign.com">hello@starrydesign.com</a></p>
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="assets/project1.jpg" alt="Project 1">
+                    <h3>E-Commerce Website</h3>
+                    <p>A modern online store built with React.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/project2.jpg" alt="Project 2">
+                    <h3>Portfolio Redesign</h3>
+                    <p>Minimalist portfolio for a photographer.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="assets/project3.jpg" alt="Project 3">
+                    <h3>Mobile App UI</h3>
+                    <p>Fitness app interface design.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Khubi Designs. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 StarryDesign. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
