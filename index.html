@@ -3,72 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>VR Tech | Revolution in Virtual Reality</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="wrap" class="oe_structure">
-        <section class="s_cover o_cc o_cc5 pt232 pb232 oe_img_bg o_full_screen_height" style="background-image: url('path/to/cover_image.jpg'); background-position: 50% 0;">
-            <div class="o_we_bg_filter bg-black-50"></div>
-            <div class="container s_allow_columns">
-                <h1 class="display-3" style="text-align: center;">The Revolution <br/> in Virtual Reality</h1>
-                <p class="lead"><br/></p>
-                <p style="text-align: center;">
-                    <a href="#0" class="btn btn-primary btn-lg">Discover more</a>
-                </p>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">VR Tech</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <span class="phone"><i class="fas fa-phone"></i> +1555-555-5556</span>
+                <a href="contact.html" class="contact-btn">Contact Us</a>
             </div>
-        </section>
-        <section class="s_text_image pt80 o_cc o_cc2 pb232">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 pt16 pb16">
-                        <h2 class="h3-fs">
-                            <font style="background-image: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);" class="text-gradient">Full immersion</font>
-                        </h2>
-                        <p>Our services include bespoke software development, mobile app creation, and system integration. We focus on delivering solutions that are not only functional but also user-friendly, ensuring a seamless experience for your team and clients.</p>
-                        <p>Start with the user – understand their needs and deliver exceptional solutions.</p>
-                        <p><a href="#" class="btn btn-secondary">Learn more about our solutions</a></p>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1 pt16 pb16">
-                        <img src="path/to/image1.jpg" class="img img-fluid mx-auto rounded" alt="" loading="lazy"/>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>The Revolution in Virtual Reality</h1>
+            <a href="#full-immersion" class="discover-btn">Discover more</a>
+        </div>
+    </section>
+
+    <!-- Full Immersion Section -->
+    <section id="full-immersion" class="full-immersion">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="content">
+                    <h2>Full Immersion</h2>
+                    <p>Our services include bespoke software development, mobile app creation, and system integration. We focus on delivering solutions that are not only functional but also user-friendly, ensuring a seamless experience for your team and clients.</p>
+                    <p class="highlight">Start with the user – understand their needs and deliver exceptional solutions.</p>
+                    <a href="services.html" class="learn-more">Learn more about our solutions</a>
+                </div>
+                <div class="image">
+                    <img src="assets/images/vr-headset.jpg" alt="VR Headset">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New World Experience Section -->
+    <section class="new-world">
+        <div class="container">
+            <h2>Experience a new world</h2>
+            <p>Put yourself at the center of an extraordinary gaming universe with exclusive games.</p>
+            <div class="vr-showcase">
+                <img src="assets/images/vr-experience.jpg" alt="VR Experience">
+                <p>Watch as a living game world comes alive all around you, with a seamless field of view wherever you look.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <h3>Comfort & Ease</h3>
+                <p>We only use original parts or parts of equivalent quality. We make sure you get the best quality available on the market at the best price.</p>
+                <a href="#">Discover more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="feature-card">
+                <h3>Fitting design</h3>
+                <p>Ergonomic designs that adapt to your needs, providing the most comfortable VR experience available today.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Natural control</h3>
+                <p>Intuitive interfaces that respond to your natural movements, eliminating the learning curve.</p>
+                <a href="#">Continue reading <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>VR Tech</h3>
+                    <p>3575 Fake Buena Vista Avenue</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +1 555-555-5556</p>
+                    <p><i class="fas fa-envelope"></i> info@vrtech.example.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="s_picture o_cc3 pb80 pt80">
-            <div class="o_container_small">
-                <h2 style="text-align: center;">Experience a new world</h2>
-                <p style="text-align: center;">Put yourself at the center of an extraordinary gaming universe with exclusive games.</p>
-                <div class="row">
-                    <div class="col-lg-12 pt24" style="text-align: center;">
-                        <figure class="figure">
-                            <img src="path/to/media_image.jpg" class="figure-img img-fluid rounded" alt="" style="width: 100%;" loading="lazy"/>
-                            <figcaption class="figure-caption text-muted py-3">Watch as a living game world comes alive all around you, with a seamless field of view wherever you look.</figcaption>
-                        </figure>
-                    </div>
-                </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2025 VR Tech. All rights reserved.</p>
             </div>
-        </section>
-        <section class="s_media_list o_colored_level o_cc o_cc2 pt64 pb64">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 s_media_list_item pt16 pb16">
-                        <h3>Comfort & Ease</h3>
-                        <p>We only use original parts or parts of equivalent quality. We make sure you get the best quality available on the market at the best price. All our interventions are guaranteed for a period of one year.</p>
-                        <a href="#">Discover more <i class="fa fa-long-arrow-right align-middle ms-1"></i></a>
-                    </div>
-                    <div class="col-lg-12 s_media_list_item pt16 pb16">
-                        <h3>Fitting design</h3>
-                        <p>We only use original parts or parts of equivalent quality. We make sure you get the best quality available on the market at the best price. All our interventions are guaranteed for a period of one year.</p>
-                    </div>
-                    <div class="col-lg-12 s_media_list_item pt16 pb16">
-                        <h3>Natural control</h3>
-                        <p>Use this snippet to build various types of components that feature a left- or right-aligned image alongside textual content. Duplicate the element to create a list that fits your needs.</p>
-                        <a href="#">Continue reading <i class="fa fa-long-arrow-right align-middle ms-1"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
