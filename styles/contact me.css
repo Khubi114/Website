@@ -1,0 +1,145 @@
+/* Form Container */
+form {
+  background: white;
+  padding: 30px;
+  margin-top: 40px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: var(--font-family);
+}
+
+/* Inputs, Selects, Textareas */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Validation Styling */
+input:invalid:not(:placeholder-shown) {
+  border-color: var(--error-color);
+}
+
+input:valid {
+  border-color: var(--success-color);
+}
+
+/* Required Field Indicator */
+label[for]:after,
+legend:after {
+  content: attr(data-required);
+  color: var(--error-color);
+  margin-left: 5px;
+}
+
+label[for][required]:after,
+legend[required]:after {
+  content: "*";
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Checkboxes and Radios */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Resume Upload Hint */
+#resume + span {
+  display: block;
+  color: grey;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+/* Terms & Conditions Text */
+label span {
+  font-size: small;
+  color: var(--primary-color);
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+a:active {
+  color: var(--error-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px 0 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: black;
+  transform: scale(1.05);
+}
+ 
+  /* for the flexbox  */
+  
+    .flexbox {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    .box {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      width: 500px;
+      height:30px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      display: flex;
+      font-size: 18px;
+      color: #333;
+      transition: transform 0.3s, box-shadow 0.2s;
+      position: relative;
+    }
+
+    .box:hover {
+      transform: translateY(2px);
+      box-shadow: 0 4px 20px lightslategray;
+      z-index: 0;
+    }
+
+    .field-mandatory {
+      display: inline;
+      color: red;
+      font-weight: bold;
+      margin-left: 4px;
+    }

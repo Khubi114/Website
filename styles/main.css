@@ -1,0 +1,111 @@
+/* Sidebar (aside) styling */
+aside {
+    flex: 1;
+    min-width: 220px;
+    background: #e9ecef;
+    padding: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Sidebar list reset and spacing */
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 15px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color var(--transition-speed);
+}
+
+aside ul li a:hover {
+    color: var(--text-color); /* Using a hover color for better user experience */
+}
+
+/* Section layout: image and text side-by-side */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Text content inside sections */
+section p,
+section ul,
+section ol {
+    flex: 1 1 55%;
+    max-width: 55%;
+    line-height: 1.6;
+}
+
+/* Section images */
+section img {
+    flex: 1 1 40%;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 1px;
+}
+
+/* Adjust spacing when image precedes text */
+section img + p,
+section img + ul {
+    margin-top: 20px;
+}
+
+/* Buttons (including anchor buttons) */
+button,
+a.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+    cursor: pointer;
+}
+
+button:hover,
+a.button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* Improved mobile responsiveness for smaller screens */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section p,
+    section ul,
+    section ol {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    section img {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    aside {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
