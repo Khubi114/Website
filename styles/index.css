@@ -2,7 +2,7 @@
 aside {
     flex: 1;
     min-width: 220px;
-    background: #e9ecef;
+    background: var(--background-color);
     padding: 20px;
     border: 2px solid var(--border-color);
     border-radius: 10px;

@@ -25,7 +25,7 @@ body {
   
 /* Header */
 header {
-    background-image: url('../styles/images/background.png');
+    background-image: url('../images/Header.png');
     color: var(--font-family);
     padding: 30px 20px;
     text-align: center;
