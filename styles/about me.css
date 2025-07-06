@@ -1,15 +1,15 @@
 /* Define reusable variables for consistent theming */
 :root {
-    --primary-color: DimGrey; /* Used for primary User Interface elements */
-    --secondary-color: LightGrey; /* Used for backgrounds or secondary elements */
-    --accent-color: Silver; /* Used for hover states or highlights */
-    --background-color: WhiteSmoke; /* Page background */
-    --border-color: DarkGrey; /* Borders for containers and components */
-    --error-color: Red; /* Error messages or indicators */
-    --success-color: Green; /* Success messages or indicators */
-    --text-color: Black; /* Default text color */
-    --font-family: 'Segoe UI', 'Arial', sans-serif; /* Base font stack */
-    --transition-speed: 0.6s; /* Default transition duration */
+    --primary-color: #B08968;
+    --secondary-color: #603808;
+    --accent-color: rgb(9, 60, 227);
+    --background-color: #FFEDD8;
+    --border-color: #603808;
+    --error-color: Red;
+    --success-color: Green;
+    --text-color: Black;
+    --font-family: 'Segoe UI', 'Arial', sans-serif;
+    --transition-speed: 0.6s;
 }
 
 /* Enable smooth scrolling for anchor links */

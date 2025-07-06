@@ -1,9 +1,9 @@
 :root {
-    --primary-color: DimGrey;
-    --secondary-color: LightGrey;
-    --accent-color: Silver;
-    --background-color: WhiteSmoke;
-    --border-color: DarkGrey;
+    --primary-color: rgb(118, 50, 63);
+    --secondary-color: #c09f80;
+    --accent-color: rgb(9, 60, 227);
+    --background-color: #d7cec7;
+    --border-color: #565656;
     --error-color: Red;
     --success-color: Green;
     --text-color: Black;
@@ -25,7 +25,7 @@ body {
   
 /* Header */
 header {
-    background-image: url('../images/Header.png');
+    background-image: url('');
     color: var(--font-family);
     padding: 30px 20px;
     text-align: center;
@@ -55,8 +55,8 @@ nav {
     flex-wrap: wrap;
     padding: 10px 0;
     margin-top: 0; /* Remove top margin so it's flush */
-    
-    background: linear-gradient(to right, dimgray, whitesmoke);
+
+    background: linear-gradient(to right, #d8cfbc, #FFEDD8);
     border: 2px solid var(--border-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
