@@ -1,13 +1,11 @@
-/* Define reusable variables for consistent theming */
 :root {
-    --primary-color: #B08968;
-    --secondary-color: #603808;
-    --accent-color: rgb(9, 60, 227);
-    --background-color: #FFEDD8;
-    --border-color: #603808;
+    --primary-color: #4F000B;
+    --secondary-color: #290005;
+    --background-color: #F0EFEB;
+    --accent-color: #602437;
     --error-color: Red;
     --success-color: Green;
-    --text-color: Black;
+    --text-color: #522E38;
     --font-family: 'Segoe UI', 'Arial', sans-serif;
     --transition-speed: 0.6s;
 }
@@ -28,7 +26,7 @@ body {
 
 /* Header container with background image and centered content */
 header {
-    background-image: url('../images/Header.png');
+    background-image: url('');
     color: var(--text-color);
     padding: 30px 20px;
     text-align: center;
@@ -46,6 +44,7 @@ header img {
 header h1 {
     font-size: 2.5rem;
     margin: 10px 0 20px;
+    color: var(--secondary-color);
 }
 
 /* Section headings */
@@ -80,8 +79,8 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0;
-    background: linear-gradient(to right, dimgray, whitesmoke);
-    border: 2px solid var(--border-color);
+    background: linear-gradient(to right, var(--accent-color), var(--background-color));
+    border: 2px solid var(--secondary-color);
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -118,8 +117,8 @@ main, .content-section {
 aside {
     display: flex;
     justify-content: center;
-    background-color: var(--secondary-color);
-    border: 2px solid var(--border-color);
+    background-color: var(--background-color);
+    border: 2px solid var(--secondary-color);
     padding: 12px;
     border-radius: 5px;
     margin-top: 15px;
@@ -146,7 +145,7 @@ figure img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--secondary-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -197,7 +196,7 @@ caption {
 /* Table cells */
 th, td {
     padding: 15px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--secondary-color);
     text-align: left;
 }
 

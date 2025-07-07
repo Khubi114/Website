@@ -1,12 +1,11 @@
 :root {
-    --primary-color: rgb(118, 50, 63);
-    --secondary-color: #c09f80;
-    --accent-color: rgb(9, 60, 227);
-    --background-color: #d7cec7;
-    --border-color: #565656;
+    --primary-color: #4F000B;
+    --secondary-color: #290005;
+    --background-color: #F0EFEB;
+    --accent-color: #602437;
     --error-color: Red;
     --success-color: Green;
-    --text-color: Black;
+    --text-color: #522E38;
     --font-family: 'Segoe UI', 'Arial', sans-serif;
     --transition-speed: 0.6s;
 }
@@ -41,23 +40,24 @@ header img {
 header h1 {
     font-size: 2.5rem;
     margin: 10px 0 20px;
+    color: var(--secondary-color);
 }
   
 nav {
-    position: sticky; /* 🔥 Makes it stick */
+    position: sticky; 
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1; /* Keeps it above all content */
+    z-index: 1; 
     
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0;
-    margin-top: 0; /* Remove top margin so it's flush */
+    margin-top: 0; 
 
-    background: linear-gradient(to right, #d8cfbc, #FFEDD8);
-    border: 2px solid var(--border-color);
+    background: linear-gradient(to right, var(--accent-color), var(--background-color));
+    border: 2px solid var(--secondary-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }  
@@ -83,7 +83,7 @@ aside nav {
   display: flex;
   justify-content: center;
   background-color: var(--secondary-color);
-  border: 2px solid var(--border-color);
+  border: 2px solid var(--secondary-color);
   padding: 12px 0;
   border-radius: 5px;
   margin-top: 15px;
@@ -105,7 +105,7 @@ main {
     margin: 60px auto;
     padding: 30px;
     background: white;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--secondary-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     animation: fadeInUp 0.6s ease-out;
@@ -117,6 +117,7 @@ main h2 {
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 8px;
     margin-top: 30px;
+    text-align: center;
 }
 
 aside h2 {

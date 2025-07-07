@@ -1,64 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Janet Yin" content="Position Descriptions page. The page contains description of what the jobs available at Solvex at the moment">
-    <title>Jobs Available</title>
+    <meta name="Khubi Shah" content="Projects page: Portfolio projects by Khubi Shah">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/projects.css">
-</head>
+    <title>Khubi Shah | UX Designer & Frontend Developer Portfolio</title>
+  </head>
 
-<body>
-  <header>
-    <img src="images/Logo.png" alt="Solvex_Logo" loading="lazy">
-    <h1>Khubi Shah</h1>
-  </header>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="KS_Logo" loading="lazy">
+      <h1>Khubi Shah</h1>
+    </header>
 
- <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact me.html">Contact Me</a>
-    <a href="about me.html">About Me</a>
-  </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact_me.html">Contact Me</a>
+      <a href="about_me.html">About Me</a>
+    </nav>
 
-  <main>
-    <h2>Current Job Openings at Solvex</h2>
-    <section id="job-listings">
-        <article class="job">
-            <h3>Network Administrator</h3>
-            <p><strong>Job Reference Number:</strong> 00125</p>
-            <p><strong>Location:</strong> Melbourne, Australia</p>
-            <p><strong>Salary:</strong> $80,000 - $90,000 per annum</p>
-            <p><strong>Description:</strong> Responsible for maintaining the network infrastructure, ensuring security and performance.</p>
-        </article>
+    <main>
+      <h2>Projects</h2>
+      <section id="projects">
+        <div class="projectsContainer">
+          <!-- Project 1 -->
+          <div class="projectCard">
+            <a href="https://github.com/Khubi114/Music-Player.git" class="projectTile" target="_blank">
+              <figure>
+                <img src="images/music_player.png" alt="Project 1 Screenshot">
+                <figcaption>Music Player</figcaption>
+              </figure>
+            </a>
+            <div class="projectContent">
+              <p>
+                Developed for Swinburne's Introduction to Programming unit, this interactive music player 
+                combines Ruby's architecture with Gosu's 2D rendering engine. The application features playback 
+                controls, and a dynamic GUI—demonstrating core CS principles like class inheritance.
+              </p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="projectCard">
+            <a href="https://github.com/Janet1411/project1.git" class="projectTile" target="_blank">
+              <figure>
+                <img src="images/website.png" alt="Project 2 Screenshot">
+                <figcaption>Solvex Website</figcaption>
+              </figure>
+            </a>
+            <div class="projectContent">
+              <p>
+                This two-part Web Technology project implements a secure IT portal, transitioning from a 
+                front-end prototype (HTML/CSS) to a full-stack solution with SQL database integration and 
+                PHP authentication. 
+              </p>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="projectCard">
+            <a href="https://github.com/Khubi114/Stop-watch.git" class="projectTile" target="_blank">
+              <figure>
+                <img src="images/stop_watch.png" alt="Project 3 Screenshot">
+                <figcaption>Stop Watch</figcaption>
+              </figure>
+            </a>
+            <div class="projectContent">
+              <p>
+                Designed in Logisim, this digital stopwatch project integrates flip-flops,
+                counters, and a multiplexed display to achieve accurate start/stop/reset functionality—showcasing
+                low-level logic design and clock management for my Computer Systems unit at Swinburne.
+              </p>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="projectCard">
+            <a href="https://github.com/Khubi114/Matchsticks.git" class="projectTile" target="_blank">
+              <figure>
+                <img src="images/matchsticks.png" alt="Project 4 Screenshot">
+                <figcaption>Matchsticks</figcaption>
+              </figure>
+            </a>
+            <div class="projectContent">
+              <p>
+                This matchstick game, written in ARMlite assembly, pits the player against a strategic AI opponent.
+                This program was also created for my Computer Systems unit at Swinburne and it leverages conditional 
+                branching, stack operations, and bitwise logic to manage game state, enforce rules.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <article class="job">
-            <h3>Data Analyst</h3>
-            <p><strong>Job Reference Number:</strong> 00130</p>
-            <p><strong>Location:</strong> Melbourne, Australia</p>
-            <p><strong>Salary:</strong> $70,000 - $80,000 per annum</p>
-            <p><strong>Description:</strong> Analyze data to provide insights and support decision-making processes.</p>
-        </article>
-
-        <article class="job">
-            <h3>Cybersecurity Specialist</h3>
-            <p><strong>Job Reference Number:</strong> 00135</p>
-            <p><strong>Location:</strong> Melbourne, Australia</p>
-            <p><strong>Salary:</strong> $90,000 - $100,000 per annum</p>
-            <p><strong>Description:</strong> Protect the company's information systems from cyber threats and vulnerabilities.</p>
-        </article>
-    </section>
-  </main>
-
-  <footer>
-    <div id="footer"></div>
-    <div class="container">
-      <div class="copyright">
-        <span>Copyright &copy; <span class="company-name">Company Name</span></span>
+    <footer>
+      <div id="footer"></div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright &copy; <span class="company-name">Company Name</span></span>
+        </div>
       </div>
-    </div>
-  </footer>
-  
-</body>
+    </footer>
+  </body>
 </html>
